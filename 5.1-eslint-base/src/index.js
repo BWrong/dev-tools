@@ -1,7 +1,8 @@
 // import moduleA from './module-a';
 // 1. 未使用的变量声明
-let test = 1;
-console.log('hello');
+
+let test = 1
+console.log('hello')
 
 // 2. 全局变量
 // let setVal = new Set([1, 2]);
