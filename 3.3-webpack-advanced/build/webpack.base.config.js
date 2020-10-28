@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const AutoDllPlugin = require('autodll-webpack-plugin')
 module.exports = {
   entry: {
     main: './src/index.js',
@@ -37,7 +38,7 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        use: ['babel-loader'],
+        use: ['babel-loader?cacheDirectory'],
         exclude: /node_modules/
       },
       {
@@ -82,6 +83,15 @@ module.exports = {
       filename: '[name]_[hash:5].css', // 输出文件的名字
       // ... 其他配置
     }),
+    new AutoDllPlugin({
+      inject: true,
+      filename: '[name].js',
+      entry: {
+        vendor: [
+          'vue'
+        ]
+      }
+    })
   ],
   // externals: {
   //   'dayjs': 'dayjs'

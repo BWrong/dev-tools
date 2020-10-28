@@ -2,6 +2,7 @@ import './assets/style.css';
 import './assets/style.less'
 import {cube} from './math'
 import dayjs from 'dayjs'
+import Vue from 'vue'
 // import $ from 'jquery'
 console.log('hello webpack');
 let a = 2;
@@ -16,3 +17,8 @@ document.getElementById('btn').onclick = function() {
       fn.default && fn.default();
   });
 }
+new Vue({
+  data: {
+
+  }
+})
