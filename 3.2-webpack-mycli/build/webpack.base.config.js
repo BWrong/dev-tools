@@ -9,6 +9,7 @@ module.exports = {
     sub: './src/sub.js'
   },
   output: {
+    // publicPath: '',
     filename: '[name]_[hash:8].js',
     path: path.resolve(__dirname, '../dist')
   },
@@ -67,7 +68,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'my-cli-sub',
-      template: './public/index.html',
+      template: './public/sub.html',
       filename: 'sub.html',
       chunks: ['sub']
     }),

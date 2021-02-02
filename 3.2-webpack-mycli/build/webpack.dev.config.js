@@ -8,7 +8,7 @@ module.exports = merge(baseConfig, {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     open: true,
-    port: '8080', //默认是8080
+    port: '8081', //默认是8080
     hot: true, // 开启模块热替换
     inline: true, //默认开启 inline 模式，如果设置为false,开启 iframe 模式
     overlay: true, //启用浮层提示

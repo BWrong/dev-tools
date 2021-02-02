@@ -1,6 +1,10 @@
-div{
+.logo{
+  width: 100px;
+  height: 100px;
   color: green;
-  transform: rotate(180deg);
-  background-image:url('../assets/logo.ico');
-
+  background: url('../assets/logo.ico') center no-repeat;
+  margin: 0 auto;
+}
+.title{
+  text-align: center;
 }
