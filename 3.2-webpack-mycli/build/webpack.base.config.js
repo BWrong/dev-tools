@@ -73,7 +73,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        // 将public/js/下的所有js文件拷贝到dist/js目录中
+        // 将public/static/下的所有文件拷贝到dist/static目录中
         { from: './public/static/*', to: 'static', flatten: true},
         // ... 多个需要拷贝的文件/夹在此继续添加
       ]
