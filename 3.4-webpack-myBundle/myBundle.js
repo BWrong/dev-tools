@@ -23,7 +23,7 @@ const getModuleInfo = (file) => {
   const { code } = babel.transformFromAst(ast, null, {
 		presets: ['@babel/preset-env']
   });
-  const moduleInfo = { file, dependencies, code };
+	const moduleInfo = { file, dependencies, code };
 	return moduleInfo;
 };
 /**
