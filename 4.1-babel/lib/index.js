@@ -2,6 +2,12 @@
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
+require("core-js/modules/es.array.includes.js");
+
+require("core-js/modules/es.promise.js");
+
+require("core-js/modules/es.object.to-string.js");
+
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
@@ -15,10 +21,10 @@ var a = function a() {
 
 var Foo = /*#__PURE__*/function () {
   function Foo() {
-    (0, _classCallCheck2.default)(this, Foo);
+    (0, _classCallCheck2["default"])(this, Foo);
   }
 
-  (0, _createClass2.default)(Foo, [{
+  (0, _createClass2["default"])(Foo, [{
     key: "method",
     value: function method() {}
   }]);
